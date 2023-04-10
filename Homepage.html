@@ -8,6 +8,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <link href="Homepage.css" rel="stylesheet">
         <link href="Carousel.css" rel="stylesheet">
+        <style>
+          .container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+          }
+        
+          .d-inline-block {
+            display: inline-block;
+          }
+        </style>
     </head>
         <header>
         <!-- The Navbar Section Starts-->
@@ -16,7 +27,7 @@
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
+                        <a class="nav-link" href="#faq">FAQs</a>
                       </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Action</a>
@@ -35,21 +46,53 @@
             <h1>Welcome to Online Incident Reporting!</h1>
 
           </div>
-
           <!-- The Carousel Section Starts -->
+          <div class="container">
+            <div class="d-inline-block">
+              <div class="card" style="width: 13rem;">
+                <a href="Signup.html"> <img src="stepone.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <p class="card-text"> You can explore through the homepage. Then first step is for you to register by signing up.</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-inline-block">
+              <div class="card" style="width: 13rem;">
+                <a href="Login.html"> <img src="steptwo.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <p class="card-text"> The second step is to Login using the username and password used to sign up.</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-inline-block">
+              <div class="card" style="width: 13rem;">
+                <img src="stepthree.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Finally, you can report. Make sure, the details of your incident reported are correct.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         
           <!-- The Carousel Section Ends-->
+          <br>
+          <br>
+          <br>
 
 <!-- The FAQ Section Starts-->
-<div class="accordion accordion-flush" id="accordionFlushExample">
+<section id="faq"><div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          What are the steps I need to follow to submit a report?
+          What if I file a fake report?
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div class="accordion-body">Filing a fake FIR (First Information Report) is a serious criminal offense in Nepal. If you file a false FIR, you may be charged with an offense under Section 218 of the Nepal Criminal Code.
+
+          The punishment for filing a false FIR in Nepal can range from a fine of up to Rs. 5,000 to imprisonment for up to 3 years. Additionally, the police may also initiate legal proceedings against you for making a false complaint, which can result in further legal penalties.
+          
+          It's important to remember that filing a false FIR can have serious consequences and should not be done under any circumstances.</div>
       </div>
     </div>
     <div class="accordion-item">
@@ -59,7 +102,15 @@
         </button>
       </h2>
       <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        <div class="accordion-body">Requiring a citizenship number when submitting reports can serve several purposes.
+
+          Firstly, the citizenship number can help to verify the identity of the person submitting the report. This can be important to prevent false reports or impersonation.
+          
+          Secondly, the citizenship number can provide important demographic information about the person submitting the report, such as their age, gender, and place of birth. This information can be useful for statistical analysis and can help to identify patterns or trends in the data.
+          
+          Lastly, in some countries, such as Nepal, providing a citizenship number may be required by law for certain types of reports or complaints. This helps to ensure that the reporting system is transparent and accountable, and can help to prevent abuse or misuse of the system.
+          
+          Overall, requiring a citizenship number when submitting reports can help to ensure the accuracy and validity of the information being provided, and can help to improve the effectiveness of the reporting system.</div>
       </div>
     </div>
     <div class="accordion-item">
@@ -69,10 +120,11 @@
         </button>
       </h2>
       <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        <div class="accordion-body">Yes the report submitted by the user will directly be reviewed by the members of hte concerned authorities, that firstly verify and confirm the identity of the reporter and then they begin the preliminary investigation.</div>
       </div>
     </div>
   </div>
+</section>
   <!-- The FAQ Section Ends-->
 <br>
 
